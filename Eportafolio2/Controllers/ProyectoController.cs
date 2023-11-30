@@ -63,7 +63,8 @@ namespace Eportafolio2.Controllers
                     imagenfile.SaveAs(path);
 
                     //asigna el nombre de la imagen al campo "imagen" del modelo
-                    proyecto.Imagen = filename;                }
+                    proyecto.Imagen = filename;                
+                }
 
                 db.Proyectos.Add(proyecto);
                 db.SaveChanges();
